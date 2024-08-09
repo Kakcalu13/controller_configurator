@@ -8,9 +8,123 @@ script = ExtResource("1_m61lw")
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_right = 2571.0
 offset_bottom = 1576.0
+color = Color(0.254902, 0.0588235, 1, 1)
 
 [node name="TextEdit" type="TextEdit" parent="."]
+visible = false
 offset_left = 241.0
 offset_top = 216.0
 offset_right = 569.0
 offset_bottom = 313.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+offset_left = 1.0
+offset_top = 306.0
+offset_right = 753.0
+offset_bottom = 641.0
+
+[node name="head" type="Control" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="key" type="TextEdit" parent="VBoxContainer/head"]
+layout_mode = 0
+offset_left = 87.0
+offset_top = 3.0
+offset_right = 162.0
+offset_bottom = 39.0
+placeholder_text = "Name"
+
+[node name="Sensor_label" type="Label" parent="VBoxContainer/head"]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 9.0
+offset_right = 66.0
+offset_bottom = 32.0
+text = "Name: "
+
+[node name="component_label" type="Label" parent="VBoxContainer/head"]
+layout_mode = 0
+offset_left = 79.0
+offset_top = 53.0
+offset_right = 179.0
+offset_bottom = 76.0
+text = "Component: "
+
+[node name="component" type="TextEdit" parent="VBoxContainer/head"]
+offset_left = 185.0
+offset_top = 49.0
+offset_right = 260.0
+offset_bottom = 85.0
+placeholder_text = "Name"
+
+[node name="component_box" type="ColorRect" parent="VBoxContainer/head"]
+layout_mode = 0
+offset_left = 90.0
+offset_top = 95.0
+offset_right = 421.0
+offset_bottom = 303.0
+color = Color(1, 0.341176, 0.0901961, 1)
+
+[node name="index" type="Label" parent="VBoxContainer/head/component_box"]
+layout_mode = 0
+offset_right = 13.0
+offset_bottom = 23.0
+text = "index: "
+
+[node name="index_textbox" type="TextEdit" parent="VBoxContainer/head/component_box"]
+layout_mode = 0
+offset_left = 49.0
+offset_right = 136.0
+offset_bottom = 24.0
+placeholder_text = "number"
+
+[node name="ColorRect" type="ColorRect" parent="VBoxContainer/head/component_box"]
+layout_mode = 0
+offset_left = 37.0
+offset_top = 33.0
+offset_right = 287.0
+offset_bottom = 181.0
+color = Color(0.424931, 0.424931, 0.424931, 1)
+
+[node name="disable_label" type="Label" parent="VBoxContainer/head/component_box/ColorRect"]
+layout_mode = 0
+offset_top = 9.0
+offset_right = 66.0
+offset_bottom = 32.0
+text = "Disable: "
+
+[node name="disable_textbox" type="TextEdit" parent="VBoxContainer/head/component_box/ColorRect"]
+offset_left = 71.0
+offset_top = 3.0
+offset_right = 158.0
+offset_bottom = 35.0
+placeholder_text = "Bool"
+
+[node name="custom_name_label" type="Label" parent="VBoxContainer/head/component_box/ColorRect"]
+offset_left = 2.0
+offset_top = 43.0
+offset_right = 68.0
+offset_bottom = 66.0
+text = "Custom name:"
+
+[node name="custom_name_textbox" type="TextEdit" parent="VBoxContainer/head/component_box/ColorRect"]
+offset_left = 119.0
+offset_top = 40.0
+offset_right = 206.0
+offset_bottom = 72.0
+placeholder_text = "Bool"
+
+[node name="Max_power_label" type="Label" parent="VBoxContainer/head/component_box/ColorRect"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 76.0
+offset_right = 95.0
+offset_bottom = 99.0
+text = "max_power"
+
+[node name="max_power_textbox" type="TextEdit" parent="VBoxContainer/head/component_box/ColorRect"]
+offset_left = 98.0
+offset_top = 76.0
+offset_right = 185.0
+offset_bottom = 108.0
+placeholder_text = "Bool"

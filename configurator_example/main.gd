@@ -8,10 +8,12 @@ func _ready():
 	var json = JSON.new()
 	var error = json.parse(capabilities)
 	if error == OK:
-		var capabilities = json.data
+		capabilities = json.data
 	else:
 		print("JSON Parse Error: ", json.get_error_message(), " in ", capabilities, " at line ", json.get_error_line())
 
+	for i in capabilities['capabilities']['input']:
+		print(i)
 	
 
 func load_capabilities():
